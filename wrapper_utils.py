@@ -142,11 +142,11 @@ def data_collector(path,output_path):
 
     
     if not os.path.isfile("/usr/local/bin/njmon"):
-        print("NJMON is installing...")
+	print("NJMON is installing...")
         time.sleep(1)
         #subprocess.call(["bash","./njmon_installation.sh"])
         njmon_installation()
-		print("NJMON is intalled")
+	print("NJMON is intalled")
         os.system("njmon -@")
     
     else:
